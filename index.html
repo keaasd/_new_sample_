@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="keywords" content="tema, html">
+  <meta name="description" content="это описание">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <script defer src="js/index.js"></script>
+  <script defer src="js/modal.js"></script>
+  <script defer src="js/btn-up.js"></script>
+  <script defer src="js/scroll.js"></script>
+  <script defer src="js/burger_menu.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header">
+        <a href="#" class="header__logo">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <nav class="navigation">
+          <ul class="nav__list">
+            <li class="nav_items"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav_items"><a class="nav__link" href="#">Контакты</a></li>
+          </ul>
+
+        </nav>
+        <!-- бургер-кнопка -->
+        <button type="button" class="burger-btn__open"></button>
+
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+
+      <h1>Заголовок</h1>
+      <button class="modal__btn _modal-open" data-modal-open="modal-1">
+        <span>кнопка модалки</span>
+      </button>
+    </div>
+  </main>
+  <!-- мобильное меню  -->
+  <div class="modal__mb">
+    <div class="modal__mb_window">
+      <div class="modal_box">
+        <div class="modal_logo"></div>
+        <button type="button" class="burger-btn__close">х</button>
+      </div>
+      <div class="burger-link">
+        <a class="modal_link" href="#">Главная</a>
+        <a class="modal_link" href="#">Услуги</a>
+        <a class="modal_link" href="#">Галерея</a>
+        <a class="modal_link" href="#">Акции</a>
+      </div>
+    </div>
+  </div>
+  <!-- модальное окно -->
+  <div class="_modal" data-modal="modal-1">
+    <div class="modal-bg">
+      <div class="modal-body">
+        <button class="modal-close">
+          <img src="images/close.svg" alt="x" />
+        </button>
+        <div class="modal-content modal-callback">
+          <div class="modal-callback__title">Перезвоните нам!</div>
+          <div class="modal-callback__text">
+            Lorem ipsi nulla itaque provident, minima pariatur repellat
+            harum ad eligendi corrupti suscipit facere fugit nisi. Aut
+            adipisci quidem dignissimos nihil quasi, nemo corrupti recusandae.
+            Rerum molestias voluptates nemo, iusto pariatur, voluptatum
+            similique repellendus architecto inventore amet doloremque non ad
+            magnam aut
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#headerTop" class="to-up">&#8679;</a>
+</body>
+
+</html>
